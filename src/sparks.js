@@ -1,4 +1,3 @@
-// Hero arka planı: fareye tepki veren parçacık ağı + tıklayınca kıvılcım patlaması.
 const COLORS = ['#2563eb', '#3b82f6', '#06b6d4', '#10b981', '#6366f1']
 
 export function initSparks(canvas) {

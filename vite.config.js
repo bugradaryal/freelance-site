@@ -4,6 +4,6 @@ import { defineConfig } from 'vite'
 // Eğer sadece kullanici.github.io/repo-adi üzerinden yayınlarsan base: '/repo-adi/' yap.
 export default defineConfig({
   base: '/freelancer/',
-  server: {
-    open: true,
-  }})
+  build: { outDir: 'dist/freelancer' },
+  server: { open: true },
+})
