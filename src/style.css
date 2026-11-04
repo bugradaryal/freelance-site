@@ -44,8 +44,12 @@ ul, ol { list-style: none; }
 .brand { font-family: var(--display); font-weight: 600; display: flex; align-items: center; gap: 10px; }
 .brand .dim { color: var(--muted); }
 .brand-mark {
-  display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px;
-  background: linear-gradient(135deg, var(--blue), var(--cyan)); color: #fff; font-weight: 700;
+  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid var(--line);
 }
 .nav nav { display: flex; align-items: center; gap: 26px; font-size: .95rem; font-weight: 500; color: var(--muted); }
 .nav nav a:hover { color: var(--blue); }
@@ -125,12 +129,17 @@ h1 {
   background: rgba(255, 255, 255, .85); border: 1px solid var(--line); padding: 8px 14px; border-radius: 12px;
   box-shadow: 0 10px 24px rgba(37, 99, 235, .12); animation: bob 7s ease-in-out infinite;
 }
-.c1 { top: 22%; left: 8%; }
-.c2 { top: 62%; left: 6%; animation-delay: -2s; color: var(--mint); }
-.c3 { top: 28%; right: 8%; animation-delay: -4s; color: #6366f1; }
-.c4 { top: 70%; right: 10%; animation-delay: -1s; color: var(--cyan); }
-.c5 { top: 14%; left: 38%; animation-delay: -3s; }
-.c6 { top: 84%; left: 16%; animation-delay: -5s; color: var(--mint); }
+.c1 { top: 22%; left: 8%; color: #149EBD; } /* React */
+.c2 { top: 62%; left: 6%; animation-delay: -2s; color: #512BD4; } /* .NET */
+.c3 { top: 28%; right: 8%; animation-delay: -4s; color: #E34F26; } /* API */
+.c4 { top: 70%; right: 10%; animation-delay: -1s; color: #F89820; } /* Java */
+.c5 { top: 14%; left: 38%; animation-delay: -3s; color: #087EA4; } /* Mobil */
+.c6 { top: 84%; left: 16%; animation-delay: -5s; color: #3178C6; } /* TypeScript */
+.c7 { top: 45%; left: 22%; animation-delay: -2.5s; color: #E34F26; } /* Web */
+.c8 { top: 12%; right: 28%; animation-delay: -4.5s; color: #297545; } /* Data */
+.c9 { top: 85%; right: 25%; animation-delay: -1.5s; color: #68217A; } /* WPF */
+.c10 { top: 48%; right: 22%; animation-delay: -3.5s; color: #2496ED; } /* Docker */
+.c11 { top: 85%; right: 50%; animation-delay: -2s; color: #4285F4; } /* Google Ads & Analytics */
 @keyframes bob {
   0%, 100% { transform: translateY(0) rotate(-2deg); }
   50% { transform: translateY(-16px) rotate(2deg); }
